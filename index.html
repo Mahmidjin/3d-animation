@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculyator">
+        <div class="container">
+            <form action="#" name="calculyator">
+                <div class="result">
+                    <div class="number_wrapper">
+                        <input class="sum" type="text" name="display" placeholder="0" readonly>
+                    </div>
+                </div>
+                <div class="clear">
+                    <div class="ac" onclick="calculyator.display.value = ' '" role="button">AC</div>
+                </div> 
+                <div class="operate_panel">
+                    <div class="nampad_container">
+                        <input type="button" value="9" id="number" onclick="calculyator.display.value += '9'" class="num">
+                        <input type="button" value="8" id="number" onclick="calculyator.display.value += '8'" class="num">
+                        <input type="button" value="7" id="number" onclick="calculyator.display.value += '7'" class="num">
+                        <input type="button" value="6" id="number" onclick="calculyator.display.value += '6'" class="num">
+                        <input type="button" value="5" id="number" onclick="calculyator.display.value += '5'" class="num">
+                        <input type="button" value="4" id="number" onclick="calculyator.display.value += '4'" class="num">
+                        <input type="button" value="3" id="number" onclick="calculyator.display.value += '3'" class="num">
+                        <input type="button" value="2" id="number" onclick="calculyator.display.value += '2'" class="num">
+                        <input type="button" value="1" id="number" onclick="calculyator.display.value += '1'" class="num">
+                        <input type="button" value="0" id="number" class="num zero" onclick="calculyator.display.value += '0'" >
+                        <input type="button" value="=" id="number" class="num dot" onclick="calculyator.display.value = eval(calculyator.display.value)">
+                    </div>
+                    <div class="operations">
+                        <input type="button" id="opOne" class="plus" name="plus" value="+" onclick="calculyator.display.value += '+'">
+                        <input type="button" id="op" class="minus" name="minus" value="-" onclick="calculyator.display.value += '-'">
+                        <input type="button" id="op" class="multiple" name="times" value="*" onclick="calculyator.display.value += '*'">
+                        <input type="button" id="op" class="plus" name="minus" value="/" onclick="calculyator.display.value += '/'">
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
